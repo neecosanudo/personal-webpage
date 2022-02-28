@@ -1,3 +1,4 @@
+import Heading from "@components/Title";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -7,7 +8,7 @@ const Projects: NextPage = () => {
       <Head>
         <title>Proyectos</title>
       </Head>
-      <h1>Proyectos</h1>
+      <Heading text="Proyectos" />
     </>
   );
 };
