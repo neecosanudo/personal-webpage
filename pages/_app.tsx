@@ -1,11 +1,11 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import NavPage from "@components/NavPage";
+import Header from "@widgets/header";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <NavPage />
+      <Header />
       <Component {...pageProps} />
     </>
   );
