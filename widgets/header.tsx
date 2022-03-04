@@ -1,19 +1,10 @@
-import React from "react";
-import LinkItem from "@components/LinkItem";
 import NavPage from "@components/NavPage";
+import { TwStyle, TwAssemble } from "@utils/tailwindcss";
 
 const Header = () => {
   return (
     <header>
-      <NavPage>
-        {listOfPages.map((page, i) => {
-          return (
-            <LinkItem key={i} href={page[0]}>
-              {page[1]}
-            </LinkItem>
-          );
-        })}
-      </NavPage>
+      <NavPage style={TwAssemble(NavPageStyle)} pages={listOfPages} />
     </header>
   );
 };
@@ -25,5 +16,12 @@ const listOfPages = [
   ["/sobre-mi", "Sobre mí"],
   ["/contacto", "Contacto"],
 ];
+
+const NavPageStyle: TwStyle = {
+  layout: "justify-around",
+  box: 'bg-sky-500 w-screen h-screen',
+  text: 'text-2xl',
+  responsive: 'md:bg-inherit md:w-auto md:h-auto',
+};
 
 export default Header;
