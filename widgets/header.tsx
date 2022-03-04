@@ -19,9 +19,9 @@ const listOfPages = [
 
 const NavPageStyle: TwStyle = {
   layout: "justify-around",
-  box: 'bg-sky-500 w-screen h-screen',
-  text: 'text-2xl',
-  responsive: 'md:bg-inherit md:w-auto md:h-auto',
+  box: "bg-sky-500 w-screen h-screen",
+  text: "text-2xl",
+  responsive: "md:bg-inherit md:w-auto md:h-auto",
 };
 
 export default Header;
